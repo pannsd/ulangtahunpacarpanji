@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff4f7" />
+    <meta name="description" content="Kartu ulang tahun digital yang manis dan personal." />
+    <title>Untuk Kamu, Selamat Ulang Tahun</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="entry-locked">
+    <div class="entry-modal" id="entryModal" role="dialog" aria-modal="true" aria-labelledby="entry-title">
+      <div class="entry-backdrop"></div>
+      <div class="entry-card">
+        <span class="entry-icon">✦</span>
+        <p class="eyebrow"><span></span> sebelum masuk</p>
+        <h2 id="entry-title">Tunggu sebentar,<br /><em>sayang.</em></h2>
+        <p class="entry-text">Ada kejutan kecil buat kamu di dalam. Tekan tombolnya <strong>3 kali</strong> untuk membukanya ya ✨</p>
+        <button class="entry-button" id="entryButton" type="button">
+          <span class="button-sparkle">✦</span>
+          <span class="entry-button-label">Lanjutkan</span>
+          <span class="entry-count" id="entryCount"></span>
+        </button>
+        
+
+
+      </div>
+      <div class="flower-layer" id="flowerLayer" aria-hidden="true"></div>
+    </div>
+    <div class="page-noise" aria-hidden="true"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="Kembali ke halaman utama">
+        <span class="brand-mark">✦</span>
+        <span>Untuk sayang</span>
+      </a>
+      <span class="topbar-note">sebuah kejutan kecil</span>
+    </header>
+
+    <main id="top">
+      <section class="hero section-shell" aria-labelledby="hero-title">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> hari spesial sayang telah tiba😍🐻</p>
+          <h1 id="hero-title">Selamat ulang tahun, <em>sayang.</em></h1>
+          <p class="hero-text">Hari ini dunia terasa sedikit lebih indah, karena hari ini pacar tercinta mas sedang ulang tahun 💕.</p>
+          <button class="primary-button" id="wishButton" type="button">
+            <span class="button-sparkle">✦</span>
+            Buka pesan rahasia
+          </button>
+        </div>
+        <div class="hero-art reveal reveal-delay" aria-label="Dekorasi kado ulang tahun">
+          <div class="blob blob-pink"></div>
+          <div class="blob blob-peach"></div>
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="gift-card">
+            <div class="gift-ribbon vertical"></div>
+            <div class="gift-ribbon horizontal"></div>
+            <div class="gift-bow"><i></i><i></i><b></b></div>
+            <span class="gift-label">for you</span>
+          </div>
+          <span class="floating-heart heart-one">♥</span>
+          <span class="floating-heart heart-two">♥</span>
+          <span class="floating-star star-one">✦</span>
+        </div>
+      </section>
+
+      <section class="message-panel section-shell" id="message" aria-labelledby="message-title">
+        <div class="section-heading reveal">
+          <p class="eyebrow"><span></span> dari hati</p>
+          <h2 id="message-title">Satu pesan untuk<br /><em>orang tercinta dan tersayangku.</em></h2>
+        </div>
+        <div class="letter reveal">
+          <span class="letter-stamp">♡</span>
+          <p class="letter-greeting">Hai, sayang.</p>
+          <p>Terimakasih sayang sudah mau bersama dan berjuang untuk hubungan kita, mas sangat mencintai dan menyayangi sayangg selalu, mas tidak pernah bosan-bosannya untuk mencintai sayang. Bertambahnya usiamu hari ini juga jadi pengingat buat mas betapa beruntungnya kita yang terus bertahan dan merayakan hari jadian kita bersama. Di hari spesialmu ini, mas berdoa semoga segala impianmu perlahan bisa terwujud, selalu diberikan kesehatan, dan dilancarkan segala urusannya.</p>
+          <p>Jangan lupa bahagia hari ini. Mas sayang banget sama sayang, lebih dari yang bisa ditulis di halaman kecil ini.</p>
+          <div class="signature">always yours <span>♥</span></div>
+        </div>
+      </section>
+
+      <section class="memories section-shell" aria-labelledby="memories-title">
+        <div class="section-heading section-heading-row reveal">
+          <div>
+            <p class="eyebrow"><span></span> ruang kenangan</p>
+            <h2 id="memories-title">Momen yang<br /><em>ingin kusimpan.</em></h2>
+          </div>
+          <p class="section-note">Kenangan kita, tersimpan selamanya.</p>
+        </div>
+        <div class="photo-grid">
+          <div class="photo-card photo-main has-photo reveal">
+            <img class="uploaded-photo" src="foto4.jpg" alt="Foto kenangan pertama" />
+            <span class="photo-caption">the best kind of us</span>
+          </div>
+          <div class="photo-card photo-small has-photo photo-card-clickable reveal reveal-delay-two" id="littleMomentsTrigger" role="button" tabindex="0" aria-haspopup="dialog">
+            <img class="uploaded-photo" src="foto2.jpg" alt="Foto kenangan kedua" />
+            <span class="photo-caption">little moments</span>
+          </div>
+          <div class="photo-card photo-small has-photo photo-card-clickable reveal reveal-delay-three" id="favoriteViewTrigger" role="button" tabindex="0" aria-haspopup="dialog">
+            <img class="uploaded-photo" src="foto1.jpg" alt="Foto kenangan ketiga" />
+            <span class="photo-caption">my favorite view</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="countdown-section section-shell" aria-labelledby="countdown-title">
+        <div class="countdown-copy reveal">
+          <p class="eyebrow"><span></span> rayakan hari ini</p>
+          <h2 id="countdown-title">Waktu menuju<br /><em>hari bahagiamu.</em></h2>
+        </div>
+        <div class="countdown reveal reveal-delay" aria-label="Hitung mundur ulang tahun">
+          <div class="count-box"><strong id="days">00</strong><span>hari</span></div>
+          <div class="count-divider">:</div>
+          <div class="count-box"><strong id="hours">00</strong><span>jam</span></div>
+          <div class="count-divider">:</div>
+          <div class="count-box"><strong id="minutes">00</strong><span>menit</span></div>
+          <div class="count-divider">:</div>
+          <div class="count-box"><strong id="seconds">00</strong><span>detik</span></div>
+        </div>
+        <p class="countdown-hint">Setiap detik bersamamu adalah hadiah.</p>
+      </section>
+    </main>
+
+    <footer class="footer section-shell">
+      <span>dibuat dengan banyak cinta</span>
+      <span class="footer-heart">♥</span>
+      <span>untuk kamu</span>
+    </footer>
+
+    <div class="modal" id="wishModal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+      <div class="modal-backdrop" data-close-modal></div>
+      <div class="modal-card">
+        <button class="close-button" type="button" data-close-modal aria-label="Tutup pesan">×</button>
+        <span class="modal-icon">✦</span>
+        <p class="eyebrow">sebuah harapan</p>
+        <h2 id="modal-title">Make a wish,<br /><em>beautiful soul.</em></h2>
+        <p>Semoga tahun ini membawa lebih banyak rezeki untuk sayang,diberikan kemudahan dalam menjalanin dunianya,diberikan selalu kesehatanya dan dijauhkan dari orang yang berniat jahat🫂.</p>
+        <button class="secondary-button" type="button" data-close-modal>Terima kasih, sayang <span>♥</span></button>
+      </div>
+    </div>
+
+    <div class="modal" id="littleMomentsModal" role="dialog" aria-modal="true" aria-labelledby="little-modal-title" hidden>
+      <div class="modal-backdrop" data-close-photo></div>
+      <div class="modal-card polaroid-modal-card">
+        <button class="close-button" type="button" data-close-photo aria-label="Tutup galeri">×</button>
+        <p class="eyebrow"><span></span> little moments</p>
+        <h2 id="little-modal-title">Kepingan momen<br /><em>kecil kita.</em></h2>
+        <div class="polaroid-stack">
+          <div class="polaroid polaroid-a"><img src="foto5.jpg" alt="Momen kecil pertama" /></div>
+          <div class="polaroid polaroid-b"><img src="foto7.jpg" alt="Momen kecil kedua" /></div>
+          <div class="polaroid polaroid-c"><img src="foto9.jpg" alt="Momen kecil ketiga" /></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" id="favoriteViewModal" role="dialog" aria-modal="true" aria-labelledby="favorite-modal-title" hidden>
+      <div class="modal-backdrop" data-close-photo></div>
+      <div class="modal-card polaroid-modal-card">
+        <button class="close-button" type="button" data-close-photo aria-label="Tutup galeri">×</button>
+        <p class="eyebrow"><span></span> my favorite view</p>
+        <h2 id="favorite-modal-title">Pemandangan<br /><em>Kekasih paling Cantik💕.</em></h2>
+        <div class="polaroid-stack">
+          <div class="polaroid polaroid-a"><img src="foto10.jpg" alt="Pemandangan favorit pertama" /></div>
+          <div class="polaroid polaroid-b"><img src="foto11.jpg" alt="Pemandangan favorit kedua" /></div>
+          <div class="polaroid polaroid-c"><img src="foto12.jpg" alt="Pemandangan favorit ketiga" /></div>
+        </div>
+      </div>
+    </div>
+    <div class="confetti-layer" id="confettiLayer" aria-hidden="true"></div>
+    <audio id="musikKejutan" src="lagu/tulus-teman-hidup.mp3" loop></audio>
+    <script src="script.js"></script>
+  </body>
+</html>
